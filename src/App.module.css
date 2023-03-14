@@ -4,3 +4,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+.coreApp {
+  width: 50%;
+
+}
