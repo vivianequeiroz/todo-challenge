@@ -1,0 +1,10 @@
+.header {
+  padding: 4rem 0 5rem;
+  background-color: var(--gray-700);
+  width: 100%;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+}
