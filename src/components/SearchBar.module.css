@@ -24,7 +24,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--blue-300);
-  cursor: pointer;
   line-height: 0; /* to equalize spacing when focused */
   transition: color 0.2s;
   font-size: .875rem;

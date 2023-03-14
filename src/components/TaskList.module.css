@@ -1,3 +1,39 @@
 .taskStatusWrapper {
   padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.taskWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--gray-400);
+  border-radius: 8px;
+}
+
+.taskWrapper > button,
+.taskEdit > button
+ {
+  background-color: transparent;
+  border: none;
+}
+
+.taskWrapper > button {
+  color: var( --gray-300);
+  transition: color .5s;
+}
+
+.taskWrapper > button:hover {
+  color: var(--red-500)
+}
+
+.taskEdit {
+  display: flex;
+  align-items: center;
+}
+
+.taskContent {
+  padding-left: .875rem;
+  padding-right: .875rem;
+  color: var(--gray-100)
 }
