@@ -6,10 +6,10 @@ export function SearchBar() {
     <div className={styles.searchWrapper}>
       <input
         className={styles.searchInput}
-        placeholder="Adicione uma nova tarefa"
+        placeholder="Add a new task"
       ></input>
       <button className={styles.searchButton}>
-        Criar
+        Create
         <span>
           <PlusCircle size={18} />
         </span>

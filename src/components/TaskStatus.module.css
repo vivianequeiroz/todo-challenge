@@ -1,0 +1,26 @@
+.statusWrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.createdTasks > strong {
+  color: var(--blue-hover-300);
+  margin-right: .5rem;
+}
+
+.finishedTasks > strong {
+  color: var(--purple-300);
+  margin-right: .5rem;
+}
+
+.createdTasks > span,
+.finishedTasks > span {
+  background-color: var(--gray-300);
+  color: var(--gray-200);
+  padding: .125rem .5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
