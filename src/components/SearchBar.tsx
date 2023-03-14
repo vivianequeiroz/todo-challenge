@@ -3,12 +3,12 @@ import styles from "./SearchBar.module.css";
 
 export function SearchBar() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.searchWrapper}>
       <input
-        className={styles.input}
+        className={styles.searchInput}
         placeholder="Adicione uma nova tarefa"
       ></input>
-      <button className={styles.button}>
+      <button className={styles.searchButton}>
         Criar
         <span>
           <PlusCircle size={18} />

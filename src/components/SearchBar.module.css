@@ -1,20 +1,21 @@
-.wrapper {
+.searchWrapper {
   display: flex;
   justify-content: space-between;
-  width: 45%;
-  margin-top: -2rem
+  margin-top: -2rem;
+  width: 50%;
 }
 
-.input {
-  width: 40rem;
+.searchInput {
+  width: 48rem;
   background-color: var(--gray-400);
   border: none;
   border-radius: 8px;
   padding: .75rem;
-  color: var(--white)
+  color: var(--white);
+  margin-right: .75rem;
 }
 
-.button {
+.searchButton {
   width: 6rem;
   height: 3.5rem;
   border-radius: 8px;
@@ -27,12 +28,13 @@
   cursor: pointer;
   line-height: 0; /* to equalize spacing when focused */
   transition: color 0.2s;
+  font-size: .875rem;
 }
 
-.button > span {
+.searchButton > span {
   margin: .25rem;
 }
 
-.button:hover {
+.searchButton:hover {
   background-color: var(--blue-hover-300)
 }
