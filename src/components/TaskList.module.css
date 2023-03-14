@@ -1,7 +1,4 @@
-.taskStatusWrapper {
-  padding-top: 4rem;
-  padding-bottom: 1.5rem;
-}
+
 
 .taskWrapper {
   display: flex;
@@ -9,6 +6,7 @@
   padding: 16px;
   background-color: var(--gray-400);
   border-radius: 8px;
+  margin-bottom: .875rem;
 }
 
 .taskWrapper > button,
@@ -36,4 +34,12 @@
   padding-left: .875rem;
   padding-right: .875rem;
   color: var(--gray-100)
+}
+
+.scratchText {
+  text-decoration: line-through;
+}
+
+.normalText {
+  text-decoration: none;
 }
