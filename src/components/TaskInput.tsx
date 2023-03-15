@@ -1,6 +1,7 @@
 import { PlusCircle } from "phosphor-react";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Task } from "../App";
+import { EmptyTaskList } from "./EmptyTaskList";
 import { TaskList } from "./TaksList";
 import styles from "./TaskInput.module.css";
 import { TaskStatus } from "./TaskStatus";
@@ -106,16 +107,25 @@ export function TaskInput() {
           finishedTasks={getFinishedTasks()}
         />
       </div>
-      {tasksList.map((task) => {
-        return (
-          <TaskList
-            content={task.content}
-            key={task.id}
-            onChangeTaskStatus={updateTasksStatus}
-            onDeleteTask={deleteTask}
-          />
-        );
-      })}
+      {tasksList.length > 0 ? (
+        <div>
+          {" "}
+          {tasksList.map((task) => {
+            return (
+              <TaskList
+                content={task.content}
+                key={task.id}
+                onChangeTaskStatus={updateTasksStatus}
+                onDeleteTask={deleteTask}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div>
+          <EmptyTaskList />
+        </div>
+      )}
     </div>
   );
 }
