@@ -26,4 +26,12 @@ hr {
   html {
     font-size: 80%;
   }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  .emptyListWrapper {
+    padding: 3rem;
+  }
 }
