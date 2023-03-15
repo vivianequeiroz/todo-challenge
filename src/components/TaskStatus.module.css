@@ -1,12 +1,13 @@
 .statusWrapper {
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 }
 
 .createdTasks > strong {
   color: var(--blue-hover-300);
   margin-right: .5rem;
+
 }
 
 .finishedTasks > strong {
