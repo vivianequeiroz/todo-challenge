@@ -1,15 +1,22 @@
 import styles from "./TaskStatus.module.css";
 
-export function TaskStatus() {
+interface TaskStatusProps {
+  finishedTasks: number;
+  createdTasks: number;
+}
+
+export function TaskStatus(props: TaskStatusProps) {
   return (
     <div className={styles.statusWrapper}>
       <div className={styles.createdTasks}>
         <strong>Created tasks</strong>
-        <span>0</span>
+        <span>{props.createdTasks}</span>
       </div>
       <div className={styles.finishedTasks}>
         <strong>Finished</strong>
-        <span>2 of 5</span>
+        <span>
+          {props.finishedTasks} of {props.createdTasks}
+        </span>
       </div>
     </div>
   );

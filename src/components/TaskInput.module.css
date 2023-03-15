@@ -4,6 +4,11 @@
   margin-top: -2rem;
 }
 
+.taskStatusWrapper {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
 .taskInput {
   width: 48rem;
   background-color: var(--gray-400);
