@@ -1,0 +1,29 @@
+.emptyListWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem;
+}
+
+.emptyListWrapper > strong {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.emptyListWrapper > p {
+  padding-top: .4rem;
+  font-size: 1.2rem;
+}
+
+hr {
+  border: 0.5px solid var(--gray-100);
+  opacity: 0.1;
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  html {
+    font-size: 80%;
+  }
+}
