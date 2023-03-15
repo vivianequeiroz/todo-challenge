@@ -44,11 +44,10 @@
   background-color: var(--blue-hover-300)
 }
 
-.taskWrapper > button:disabled {
+.taskInputWrapper > button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 
 @media (max-width:768px) {
   .taskInputWrapper {
