@@ -81,7 +81,7 @@ export function TaskInput() {
   return (
     <div>
       <form onSubmit={handleNewTaskCreate}>
-        <div className={styles.taskWrapper}>
+        <div className={styles.taskInputWrapper}>
           <input
             value={newInputTask}
             onChange={handleNewTaskChange}
