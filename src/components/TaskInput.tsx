@@ -109,7 +109,6 @@ export function TaskInput() {
       </div>
       {tasksList.length > 0 ? (
         <div>
-          {" "}
           {tasksList.map((task) => {
             return (
               <TaskList
