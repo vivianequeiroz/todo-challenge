@@ -37,7 +37,6 @@ export function TaskInput() {
     event.preventDefault();
     setNewInputTask("");
 
-    console.log(lastTaskId);
     const newTask = {
       id: lastTaskId + 1,
       content: newInputTask,
@@ -45,7 +44,7 @@ export function TaskInput() {
     };
 
     setNewTasksList([...tasksList, newTask]);
-    console.log();
+
     setLastTaskId((id) => {
       return id + 1;
     });
@@ -57,6 +56,25 @@ export function TaskInput() {
     });
 
     return finishedTasks.length;
+  }
+
+  function deleteTask(taskContentToDelete: string) {
+    const tasksAfterDelete = tasksList.filter((task) => {
+      return task.content !== taskContentToDelete;
+    });
+
+    setNewTasksList(tasksAfterDelete);
+  }
+
+  function updateTasksStatus(taskContent: string, isFinished: boolean) {
+    const updatedTasks = tasksList.map((task) => {
+      if (task.content === taskContent) {
+        task.isFinished = isFinished;
+      }
+      return task;
+    });
+
+    setNewTasksList(updatedTasks);
   }
 
   return (
@@ -93,8 +111,8 @@ export function TaskInput() {
           <TaskList
             content={task.content}
             key={task.id}
-            id={task.id}
-            isFinished={false}
+            onChangeTaskStatus={updateTasksStatus}
+            onDeleteTask={deleteTask}
           />
         );
       })}
